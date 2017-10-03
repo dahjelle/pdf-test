@@ -1,0 +1,11 @@
+<html><body>
+<iframe src="./sample.pdf" >
+</iframe>
+</body>
+<script>
+function onload(evt) {
+  evt.target.contentWindow.print();
+}
+document.querySelector('iframe').addEventListener('load', onload);
+</script>
+</html>
